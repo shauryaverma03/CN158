@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <style>
+        body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
+nav {
+  background-color: #333;
+  padding: 10px 20px; /* Add padding to give some space around the logo and links */
+  display: flex;
+  justify-content: space-between; /* Shifts the logo to the left and links to the right */
+  align-items: center;
+}
+
+.logo {
+  height: 80px; /* Adjust height as needed */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li:not(:last-child) {
+  margin-right: 20px; /* Adjust margin between links as needed */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: grey;
+}
+
+.content {
+  padding: 20px;
+}
+body, html {
+      margin-top: 0px;
+      padding: 20px;
+      height: 100%;
+    }
+
+    .video-container {
+      width: 100%;
+      height: 100vh; /* Use 100% of the viewport height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black; /* Optional: Set a background color */
+      margin-top: 0;
+    } */
+/* 
+    .video-container video {
+      max-width: 100%;
+      max-height: 100%;
+    } */
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1; /* Send the video to the background */
+    }
+
+    .video-background video {
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /* opacity: 0.9;  */
+    }
+    .content {
+      position: relative;
+      z-index: 1; /* Ensure content appears above the video */
+      padding: 20px;
+      color: white;
+    }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="logo.png" alt="Logo" class="logo">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- <div class="video-container">
+        <video id="responsiveVideo" controls loop>
+          <source src="Luxe - Made with Clipchamp.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div> -->
+      <div class="video-background">
+        <video id="backgroundVideo" autoplay loop muted>
+          <source src="Luxe - Made with Clipchamp.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      
+      <div class="content">
+        <!-- Your webpage content goes here -->
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam non, sequi ut ipsum ab maiores ratione sit, eaque sed, dignissimos consequuntur. Provident suscipit consequuntur dicta, blanditiis eum nostrum est?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aspernatur eum consequuntur architecto, quaerat cupiditate recusandae est provident tempore quam exercitationem, maxime tenetur tempora velit. Odio eos aspernatur officiis iusto voluptatum, quae consequuntur at recusandae adipisci eius corporis reiciendis dolores earum illo blanditiis magni ullam perferendis. Culpa accusamus cum alias recusandae placeat quod ullam officia, sequi, voluptatem aliquam eaque atque laboriosam nobis hic obcaecati aspernatur impedit beatae temporibus quibusdam ducimus sunt labore. Adipisci officiis nulla quis tempore odit soluta fugiat eligendi iusto voluptatem? Ipsam velit tenetur, qui quos similique saepe hic delectus iure repellat culpa, ut quidem, ipsum non tempora voluptate sint veritatis quod! Consequuntur inventore at quo obcaecati error, eveniet blanditiis modi incidunt! Ea, inventore voluptatibus odio, ipsam hic deserunt aspernatur incidunt possimus deleniti illo earum quia magni fugiat quo voluptatum. Quas voluptas rem optio officia saepe ex consequatur repellat quaerat corrupti quam ducimus, asperiores, numquam aperiam quis cupiditate sit tempora voluptatem dolores dicta delectus! Cumque vitae cum laudantium eos numquam rem sunt, mollitia reprehenderit necessitatibus exercitationem rerum esse ex accusamus omnis soluta atque quo odit corrupti tenetur. Expedita similique natus commodi itaque aspernatur nam ad, laudantium illo, numquam in libero minima. Quae, inventore libero. Ipsam nesciunt repellendus ratione, eos harum itaque quis labore sed, fuga doloremque maiores! Officiis eos cumque fugiat optio ab velit voluptatibus tenetur, atque minima repudiandae nostrum dolorem nihil commodi quaerat veritatis dicta voluptatum pariatur nisi impedit ad voluptatem culpa rerum. Esse ratione, quisquam, cum cupiditate consectetur in ipsa laudantium id voluptatibus, corporis ipsum suscipit assumenda alias nemo. Ratione sint labore voluptatum voluptates neque totam numquam. Sit odit ducimus omnis facilis! Possimus ratione voluptatum quasi ipsa delectus, rerum, iure accusantium repellat porro facilis perferendis illum sapiente! Minus, corporis perspiciatis. Modi fugit, suscipit vel quam distinctio a ducimus libero ipsam magnam, quae magni, quas ullam tenetur?
+      </p>
+
+</body>
+</html>
+
+      
