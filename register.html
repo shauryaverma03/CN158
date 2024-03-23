@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        .top{
+            text-align: center;
+            font-size: 13px;
+            padding: 10px 40px;
+            background-color: #f3f2f5;
+        }
+        body {
+            margin: 0;
+            padding-top: 20px;
+        }
+        h1{
+            font-size: 38px;
+            color: #1A1A1A;
+            margin: 0px 0px 16px;
+            text-align: center;
+            padding-top: 60px;
+        }
+        p{
+            color: #1A1A1A;
+            font-size: 15px;
+            margin: 18px 0px 0px;
+            text-align: center;
+        }
+        .input__field{
+            padding: 0px 18px;
+            margin: 30px;
+            text-align: center;
+            width: 10%;
+            appearance: none;
+            border: 1px solid;
+            background: transparent;
+            transition: border .2s;
+        }
+        div{
+            display: block;
+        }
+        .input{
+            position: relative;
+        }
+        .login1{
+            border: 1px solid;
+            margin: 10px;
+            padding: 15px 80px;
+            align-items: center;
+            display: inline-block;
+            /* font-weight: bold; */
+            font-size: 15px;
+            color: #1A1A1A;
+        }
+        .login{
+            text-align: center;
+        }
+        .login2{
+            border: 1px solid;
+            margin: 10px;
+            padding: 15px 80px;
+            align-items: center;
+            display: inline-block;
+            /* font-weight: bold; */
+            font-size: 15px;
+            color: #1A1A1A;
+        }
+        .submit{
+            border: 1px solid;
+            margin: 10px;
+            padding: 18px 152px;
+            align-items: center;
+            display: inline-block;
+            /* font-weight: bold; */
+            font-size: 15px;
+            color: white;
+            background-color: #1A1A1A;
+        }
+        lik{
+            text-decoration: underline;
+            color: inherit;
+        }
+        .register{
+            font-size: 18px;
+        }
+        footer{
+	/* position: fixed; */
+	bottom: 0;
+}
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+ 
+	padding: 55px 50px;
+	margin-top: 215px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+.footer-distributed .footer-left{
+	width: 40%;
+}
+ 
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+ 
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0px 0 5px;
+	padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;
+}
+.footer-distributed .footer-right{
+	width: 20%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a .logo{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 5px;
+	margin-bottom: 8px;
+}
+/* .logo{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    padding: 20px;
+} */
+.list{
+    display: flex;
+    list-style: none;
+    text-transform: capitalize;
+}
+.list li{
+    margin-left: 20px;
+}
+.list a:hover{
+    color: rgb(5,233,38);
+}
+nav{
+    margin: 3% auto;
+    height: 0px;
+    width: 100%;
+    background-color: #fff;
+    color: #333333;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400px;
+    border-radius: 3px;
+    box-shadow: 0px 5px 20px -17px rgba(0,0,0,0);
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.left{
+    font-weight: 600;
+    text-align: center;
+}
+
+nav a{
+    color: #333333;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.list{
+    display: flex;
+    list-style: none;
+    text-transform: capitalize;
+}
+.list li{
+    margin-left: 20px;
+}
+.active{
+    color: rgb(5,223,38);
+}
+.list a:hover{
+    color: rgb(5,233,38);
+}
+#check{
+    display: none;
+}
+#toggle{
+    display: none;
+}
+@media(max-width:800px){
+    #check{
+        display: inline;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    .list{
+        flex-direction: column;
+        height: max-content;
+    }
+    .list{
+        flex-direction: column;
+        height: max-content;
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+        left: 0%;
+        text-align: left;
+        transition: all 0.5s;
+        transform: scaleY(0);
+        transform-origin: top;
+        box-shadow: opx 5px 20px -17px rgba(0,0,0,0);
+        padding: 10px;
+    }
+    .list li{
+        margin: 20px 0;
+    }
+    #toggle:checked ~ .list{
+        transform: scaleY(1);
+    }
+    
+}
+.navi{
+    text-align: center;
+    font-size: 18px;
+    color: #1A1A1A;
+    padding: 10px;
+    margin: 15px;
+}
+.navi a:hover{
+    color: rgb(75, 69, 69);
+}
+.nav-link{
+    color: #1A1A1A;
+    text-decoration: none;
+    margin: 8px;
+}
+.submit-link{
+    color: white;
+    text-decoration: none;
+
+}
+.Newsletter{
+    text-align: justify;
+}
+.link{
+    color: #1A1A1A;
+    text-decoration: none;
+}
+
+    </style>
+    <!-- Link to an external CSS file if preferred -->
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+</head>
+<body>
+    <!-- <p class="top">Shipping within 48 Hours!</p> -->
+    <header class="navbar">
+    <nav>
+        <div class="left">
+            <a href="#"><img src="logo.png" width="95px" height="95px"></a>
+        </div>
+         <div class="right">
+            <label for="toggle" id="check"><iconigy-icon icon="gg:menu-round" style="color: rgb(35,35,142);"></iconigy-icon></label>
+            <input type="checkbox" name="toggle" id="toggle">
+            <ul class="list">
+                <a href="index.html"><img src="profile.png" width="45px" height="45px"></a>
+            </ul>
+        </div> 
+    </nav><hr>
+    <!-- <div class="nav2">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">New Arrivals</a></li>
+            <li><a href="">Deals</a></li>
+            <li><a href="">CATEGORIES</a></li>
+            <li><a href="">Products</a></li>
+        </ul>
+    </div> -->
+    <div class="navi">
+        <span><a href="Home page2.html" class="nav-link">Home</a></span>
+        <span><a href="#" class="nav-link"> About Us</a></span>
+        <span><a href="#" class="nav-link">Contact Us</a></span>
+        <!-- <span><a href="Document3.html" class="nav-link">Categories</a></span>
+        <span><a href="Document4.html" class="nav-link">Products</a></span> -->
+    </div>
+    <hr>
+</header>
+    <h1>Register</h1><br>
+    <p>Please fill in the fields below:</p><br><br><br>
+    <div class="login">
+        <input type="text" class="login1" placeholder="First name" required="required">
+        <label for="customer[firstname]"></label><br>
+        <input type="text" class="login1" placeholder="Last name" required="required">
+        <label for="customer[lastname]"></label><br>
+        <input type="email" class="login1" placeholder="E-mail" required="required">
+        <label for="customer[email]"></label><br>
+        <input type="password" class="login2" placeholder="Password" required="required">
+        <label for="customer[password]"></label><br><br>
+        <button type="submit" class="submit">
+            <a href="login.html" class="submit-link">CREATE ACCOUNT</a>
+        </button><br>
+        <span class="register">
+            Already have an account? <a href="login.html" class="link">Login</a>
+        </span>
+    </div>
+    <!--start footer section   -->
+	<br><br><br><br><br>
+</body>
+</html>
